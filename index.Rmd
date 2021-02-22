@@ -1,0 +1,42 @@
+---
+title: "Black Incarceration Report"
+author: "Bryan Ahaneku"
+date: "2/20/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("analysis.R")
+```
+
+## Introduction
+This is a report generated from the incarceration data in the US up to the year 2018. This report specifically aims to display patterns and tendencies otherwise hidden in the mother incarceration dataframe. It showcases and highlights differences between black and white incarceration, factors gender as an element to be considered and provides visual geographical information about the data.
+
+## Summary
+In order to gain insight into the differences between the treatment of black and white people in regards to U.S incarceration, the following calculations have been conducted: 
+First, I computed the percentage of the total population that were admitted to prison for each race group. The results showed that the lowest percentage of black people admitted to prison was `r min_black_percentage`%, and ` r min_white_percentage`% for white people. The difference of `r diff_min` reveals that even the lowest (best) rate of prison admission for black people is still two times worse than the white group's best rate. In addition, I discovered that on average, `r mean_white_prison_pop` prisoners were white while `mean_black_prison_pop` prisoners. This is quite interesting because there were more black people in prison eventhough black people constitute a smaller fraction of the total population.
+
+
+
+```{r, echo=FALSE}
+line_chart
+```
+
+This chart displays the population of black and white females in prison over time. Both populations appear to be descending at first, but somewhere around 2001 the white female population experienced a sharp v-shaped increase. I wonder what event/s might have caused this.
+
+
+
+```{r, echo=FALSE,message=FALSE, warning=FALSE}
+point_chart
+```
+
+The chart above displays the correlation between total jail population and total jail admissions. As expected, we can clearly observe a linear/direct relationship between both variables. In other words, the total population increases by a factor of admissions. We can distinguish two extreme sections. There seems to be a very opaque cluster around the lower values, indicating very high density. There is also a section with higher values which is not as dense, and then a mid-section with very little information. This mid-section may have missing values.
+
+
+
+```{r, echo=FALSE}
+blk_jail_map
+```
+
+So far I've analyzed trends and patterns related to incarceration amongst the black community, so I decided to take it a steo further a see the distribution across counties in the state of California. The map shows that the counties with the highest population of black people in jail are Los Angeles, San Bernardino and San Diego. Los Angeles is the highest amont the three by far.  
