@@ -50,6 +50,7 @@ line_chart <- ggplot(df_interest, aes(x = year, y = Population, colour = race)) 
 # plot_2
 point_chart <- ggplot(data = data, aes(x = total_jail_pop, y = total_jail_adm)) +
   geom_point(aes(alpha = total_jail_pop)) +
+  labs(title = "Total jail vs prison population") +
   geom_smooth(method = "loess", se = F) +
   theme(legend.position = "none") +
   xlab("Total Jail Population") +
@@ -85,7 +86,7 @@ blk_jail_map <- ggplot(map_data) +
     mapping = aes(x = long, y = lat, group = group, fill = black_jail_pop),
     color = "gray", size = 0.3
   ) +
-  labs(fill = "Black Jail Population") +
+  labs(fill = "Black Jail Population", title = "Population Black In Jail") +
   coord_map() +
   scale_fill_continuous(
     limits = c(0, max(map_data$black_jail_pop)),

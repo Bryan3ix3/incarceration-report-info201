@@ -11,7 +11,8 @@ source("analysis.R")
 ```
 
 ## Introduction
-This is a report generated from the incarceration data in the US up to the year 2018. This report specifically aims to display patterns and tendencies otherwise hidden in the mother incarceration dataframe. It showcases and highlights differences between black and white incarceration, factors gender as an element to be considered and provides visual geographical information about the data.
+This is a report generated from the incarceration [data](https://countlove.org/) 
+in the US up to the year 2018. This report specifically aims to display patterns and tendencies otherwise hidden in the mother incarceration dataframe. It showcases and highlights differences between black and white incarceration, factors gender as an element to be considered and provides visual geographical information about the data.
 
 ## Summary
 In order to gain insight into the differences between the treatment of black and white people in regards to U.S incarceration, the following calculations have been conducted: 
@@ -39,4 +40,4 @@ The chart above displays the correlation between total jail population and total
 blk_jail_map
 ```
 
-So far I've analyzed trends and patterns related to incarceration amongst the black community, so I decided to take it a steo further a see the distribution across counties in the state of California. The map shows that the counties with the highest population of black people in jail are Los Angeles, San Bernardino and San Diego. Los Angeles is the highest amont the three by far.  
+So far I've analyzed trends and patterns related to incarceration amongst the black community, so I decided to take it a step further a see the distribution across counties in the state of California. The map shows that the counties with the highest population of black people in jail are Los Angeles, San Bernardino and San Diego. Los Angeles is the highest amount the three by far.  
