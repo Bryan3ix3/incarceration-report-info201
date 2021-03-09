@@ -11,7 +11,7 @@ source("analysis.R")
 ```
 
 ## Introduction
-This is a report generated from the incarceration [data](https://countlove.org/) 
+This is a report generated from the incarceration [data](https://github.com/vera-institute/incarceration-trends/raw/master/incarceration_trends.csv) 
 in the US up to the year 2018. This report specifically aims to display patterns and tendencies otherwise hidden in the mother incarceration dataframe. It showcases and highlights differences between black and white incarceration, factors gender as an element to be considered and provides visual geographical information about the data.
 
 ## Summary
